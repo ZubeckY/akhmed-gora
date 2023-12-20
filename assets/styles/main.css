@@ -1,3 +1,5 @@
+@import "styles.css";
+
 :root {
     --primary: #4E9488;
     --secondary: #6BC393;
@@ -237,8 +239,12 @@ button {
 
 /* card */
 .card {
+    padding: 6px 12px;
     background: var(--card);
     border-radius: var(--radius-regular);
+}
+
+.card-container {
 }
 
 .card-light {
