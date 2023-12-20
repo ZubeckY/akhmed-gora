@@ -1,0 +1,265 @@
+:root {
+    --primary: #4E9488;
+    --secondary: #6BC393;
+    --light: #E0EAD2;
+    --link: #2FA262;
+    --card: #68D780;
+    --card-title: #EAFCEF;
+    --card-text: #DAF6E1;
+    --radius-round: 50%;
+    --radius-small: 9px;
+    --radius-regular: 13px;
+    --blur-gradient: linear-gradient(268deg,hsla(0,0%,85%,.4) 3.77%,hsla(0,0%,85%,.2) 98.84%);
+}
+
+/* общие стили */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-weight: normal;
+    box-sizing: border-box;
+    font-family: 'Constantia', sans-serif;
+}
+
+@font-face {
+    font-style: normal;
+    font-family: 'Bergamasco';
+    src: local('Bergamasco'), url('../fonts/Bergamasco.ttf') format('truetype');
+}
+
+@font-face {
+    font-style: normal;
+    font-family: 'Constantia';
+    src: local('Constantia'), url('../fonts/Constantia.ttf') format('truetype');
+}
+
+a {
+    color: var(--link);
+    transition: all ease .3s;
+}
+
+a:hover {
+    color: var(--secondary);
+    transition: all ease .3s;
+}
+
+body {
+    position: relative;
+    background: var(--light);
+}
+
+/* ul, li */
+li {
+    font-size: 18px;
+}
+
+li::marker {
+    font-size: 20px;
+    color: var(--primary);
+}
+
+.primary-text {
+    font-size: 16px;
+    color: var(--primary);
+    font-family: 'Bergamasco', sans-serif;
+}
+
+.secondary-text {
+    font-size: 15px;
+    color: var(--secondary);
+}
+
+/* input */
+input {
+    height: 40px;
+    font-size: 15px;
+    padding: 4px 6px;
+    color: var(--link);
+}
+
+input::placeholder {
+    color: var(--secondary);
+}
+
+/* Убираем стрелки на input number */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.input-group {
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+}
+
+.input-group span {
+    color: var(--primary);
+    margin-bottom: 4px;
+    font-family: 'Bergamasco', sans-serif;
+}
+
+.input-outline {
+    background: transparent;
+    border: 1px solid var(--primary);
+    border-radius: var(--radius-small);
+}
+
+/* button */
+button {
+    height: 35px;
+    font-size: 15px;
+    padding: 4px 13px;
+    background: transparent;
+    font-family: 'Bergamasco', sans-serif;
+}
+
+.button-primary {
+    color: var(--light);
+    background: var(--primary);
+    border-radius: var(--radius-small);
+}
+
+.button-primary--outline {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: var(--radius-small);
+}
+
+.button-secondary {
+    color: var(--light);
+    background: var(--secondary);
+    border-radius: var(--radius-small);
+}
+
+.button-secondary--outline {
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+    border-radius: var(--radius-small);
+}
+
+/* container */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1200px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+/* display */
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-none {
+    display: none;
+}
+
+/* justify-content */
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+/* flex-direction */
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+/* align-items */
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-baseline {
+    align-items: baseline;
+}
+
+/* card */
+.card {
+    background: var(--card);
+    border-radius: var(--radius-regular);
+}
+
+.card-light {
+    background: white;
+    border-radius: var(--radius-regular);
+}
+
+.card-title {
+    font-size: 16px;
+    font-family: 'Bergamasco', sans-serif;
+    color: var(--card-title);
+}
+
+.card-light-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.card-text {
+    font-size: 15px;
+    line-height: 16px;
+    color: var(--card-text);
+}
