@@ -11,7 +11,8 @@
     --radius-round: 50%;
     --radius-small: 9px;
     --radius-regular: 13px;
-    --blur-gradient: linear-gradient(268deg,hsla(0,0%,85%,.4) 3.77%,hsla(0,0%,85%,.2) 98.84%);
+    --blur-gradient: linear-gradient(268deg, hsla(0, 0%, 85%, .4) 3.77%, hsla(0, 0%, 85%, .2) 98.84%);
+    --box-shadow: 0 0 30px 25px rgba(34, 80, 57, 0.2);
 }
 
 /* общие стили */
@@ -244,28 +245,33 @@ button {
     border-radius: var(--radius-regular);
 }
 
-.card-container {
-}
-
 .card-light {
+    padding: 6px 12px;
     background: white;
     border-radius: var(--radius-regular);
 }
 
 .card-title {
     font-size: 16px;
-    font-family: 'Bergamasco', sans-serif;
     color: var(--card-title);
+    font-family: 'Bergamasco', sans-serif;
 }
 
 .card-light-title {
     font-size: 16px;
     font-weight: 600;
     color: var(--primary);
+    font-family: 'Bergamasco', sans-serif;
 }
 
 .card-text {
     font-size: 15px;
     line-height: 16px;
     color: var(--card-text);
+}
+
+.card-light-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--primary);
 }

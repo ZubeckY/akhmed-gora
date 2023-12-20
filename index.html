@@ -16,27 +16,113 @@
     <div class="gallery-container container">
         <div class="gallery-items">
             <div class="gallery-item">
-                <img src="public/alcove/2.jpg" alt="#" title="#">
+                <div class="gallery-item__big-block d-flex align-end">
+                    <div class="card-title">Туристическое агентство базы отдыха “Ахмед-Гора”
+                        Приглашает вас на отдых в районе Ахмед-горы!
+                    </div>
+                </div>
             </div>
             <div class="gallery-item">
-                <img src="public/alcove/3.jpg" alt="#" title="#">
+                <div class="gallery-item__small-block d-flex align-end">
+
+                </div>
+                <img src="public/alcove/3.jpg" alt="#">
             </div>
             <div class="gallery-item">
-                <img src="public/meditation.jpg" alt="#" title="#">
+                <div class="gallery-item__small-block d-flex align-end">
+
+                </div>
+                <img src="public/meditation.jpg" alt="#">
             </div>
             <div class="gallery-item">
-                <img src="public/cycling.jpg" alt="#" title="#">
+                <div class="gallery-item__small-block d-flex align-end">
+
+                </div>
+                <img src="public/cycling.jpg" alt="#">
             </div>
             <div class="gallery-item">
-                <img src="public/caves/3.jpg" alt="#" title="#">
+                <div class="gallery-item__small-block d-flex align-end">
+
+                </div>
+                <img src="public/caves/3.jpg" alt="#">
             </div>
         </div>
     </div>
 </section>
 
-<section class="">
+<section class="callUs">
+    <div class="callUs-container container">
+        <div class="callUs-card card">
+            <div class="card-container d-flex justify-between align-center">
+                <div style="width: 100%; max-width: 45%">
+                    <div class="card-title">Оставьте заявку
+                        на обратный звонок
+                    </div>
+                    <div class="card-text">Оставьте заявку прямо сейчас и наша команда свяжется с Вами в ближайшее
+                        время! Мы предлагаем профессиональные услуги по размещению и отдыха, созданию комфортный и
+                        экстримальных условий для отдыха. Доверьте нам Ваш отдых и получите качественный результат!
+                    </div>
+                </div>
 
+                <form class="card-light" style="width: 100%; max-width: 45%">
+                    <div class="card-container">
+                        <label class="input-group" style="margin: 15px 0 0" for="first-name">
+                            <span>Ваше Имя и Фамилия</span>
+                            <input class="input-outline" id="first-name" placeholder="Иван Иванов" type="text"/>
+                        </label>
+                        <label class="input-group" style="margin: 15px 0 0" for="phone">
+                            <span>Телефон</span>
+                            <input class="input-outline" id="phone" placeholder="+7-(888)-888-88-88" type="text"/>
+                        </label>
+                        <button class="button-primary" style="width: 100%; height: 45px; margin: 15px 0">Кнопка</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </section>
+<style>
+    .callUs {
+        width: 100%;
+        height: 600px;
+        margin-top: 50px;
+    }
+
+    .callUs-container {
+        display: flex;
+        height: inherit;
+        align-items: center;
+        justify-content: center;
+
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border-radius: var(--radius-regular);
+        background-image: url("public/mountain.jpg");
+    }
+
+    .callUs-card {
+        padding: 20px 30px;
+        width: 100%;
+        max-width: 70%;
+        margin: 0 auto;
+        backdrop-filter: blur(40px);
+        background: var(--blur-gradient);
+        box-shadow: var(--box-shadow);
+    }
+
+    .callUs-card .card-title {
+        font-size: 23px;
+        line-height: 28px;
+        white-space: pre-line;
+        text-transform: uppercase;
+    }
+
+    .callUs-card .card-text {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+</style>
 
 <footer class="footer"></footer>
 </body>
