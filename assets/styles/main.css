@@ -11,6 +11,7 @@
     --card: #68D780;
     --card-title: #EAFCEF;
     --card-text: #DAF6E1;
+    --dark-text: #393939;
     --radius-round: 50%;
     --radius-small: 9px;
     --radius-regular: 13px;
@@ -45,6 +46,10 @@
     font-style: normal;
     font-family: 'Constantia';
     src: local('Constantia'), url('../fonts/Constantia.ttf') format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -119,6 +124,9 @@ input[type="number"]:focus {
     color: var(--primary);
     margin-bottom: 4px;
     font-family: 'Bergamasco', sans-serif;
+}
+.input-group input {
+    margin-top: 5px;
 }
 
 .input-outline {

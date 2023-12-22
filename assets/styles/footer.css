@@ -7,12 +7,29 @@
     background: var(--link);
 }
 
+.footer-contacts {
+    margin-bottom: 8px;
+}
+
 .footer-copyright {
     margin-top: 15px;
 }
 
 .footer-copyright__container {
     flex-direction: row;
+}
+
+.footer-contacts__title {
+    margin-right: 15px;
+}
+.footer-contacts__text {
+    font-size: 16px !important;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer-contacts__social {
+    margin-top: 10px;
 }
 
 .footer-contacts__round {

@@ -14,76 +14,131 @@
 <body>
 <header class="header"></header>
 
-<section class="gallery">
-    <div class="gallery-container container">
-        <div class="gallery-items">
-            <div class="gallery-item">
-                <div class="gallery-item__big-block d-flex align-end">
-                    <div class="card-title wow animate__animated animate__fadeInLeft">Туристическое агентство базы отдыха
-                        “Ахмед-Гора”
-                        Приглашает вас на отдых в районе Ахмед-горы!
+<article>
+    <section class="gallery">
+        <div class="gallery-container container">
+            <div class="gallery-items">
+                <article class="gallery-item">
+                    <div class="gallery-item__big-block d-flex align-end">
+                        <h1 class="card-title wow animate__animated animate__fadeInLeft">Туристическое агентство базы отдыха “Ахмед-Гора”
+                            Приглашает вас на отдых в районе Ахмед-горы!
+                        </h1>
                     </div>
-                </div>
+                </article>
+                <article class="gallery-item">
+                    <div class="gallery-item__small-block d-flex align-end">
+                        <img src="public/alcove/3.jpg" alt="#">
+                    </div>
+                </article>
+                <article class="gallery-item">
+                    <div class="gallery-item__small-block d-flex align-end">
+                        <img src="public/meditation.jpg" alt="#">
+                    </div>
+                </article>
+                <article class="gallery-item">
+                    <div class="gallery-item__small-block d-flex align-end">
+                        <img src="public/cycling.jpg" alt="#">
+                    </div>
+                </article>
+                <article class="gallery-item">
+                    <div class="gallery-item__small-block d-flex align-end">
+                        <img src="public/caves/3.jpg" alt="#">
+                    </div>
+                </article>
             </div>
-            <div class="gallery-item">
-                <div class="gallery-item__small-block d-flex align-end">
-                    <img src="public/alcove/3.jpg" alt="#">
-                </div>
-            </div>
-            <div class="gallery-item">
-                <div class="gallery-item__small-block d-flex align-end">
+        </div>
+    </section>
+
+<!--    <section class="" id="about-us">-->
+<!--        <div class="container">-->
+<!--            <article class="card-light">-->
+<!--                <h2 class="card-light-title">Будьте как дома!</h2>-->
+<!--                <p class="card-light-text">Выбирая отдых у нас - вы выбираете в первую очередь совмещение активного отдыха с медитативным релаксом от видов, открывающихся отовсюду в пределах нашего туристического комплекса!</p>-->
+<!--            </article>-->
+<!--        </div>-->
+<!--    </section>-->
+
+    <section class="holidayWithUs" id="services">
+        <div class="holidayWithUs-container container d-flex align-center">
+
+            <article class="holidayWithUs-text wow animate__animated animate__fadeInBottomLeft">
+                <h2 class="primary-text">Активный и медитативный отдых</h2>
+                <p>У нас вы сможете получить <b style="font-weight: 900">активный отдых</b>, такой как:
+                    - велоспорт,
+                    - гребля,
+                    - спелеотуризм,
+                    - скалаоазанье.
+
+                    Как приятный бонус - под руководством специалиста, Вы при желании сможете собрать <b style="font-weight: 900">собственный плот</b> и отправиться на центр самого живописного нашего озера для романтической встречи заката и рассвета.
+
+                    А если вам не нравится отдыхать до пота и дрожи в костях - то у нас вы найдёте и такие увлечения, как <b style="font-weight: 900">рыбалка с полностью обустроенными местами</b> под неё, специалистов для йоги, медитации, уютные посиделки с гитарой и костром по вечерам.
+                    <b style="font-weight: 900">Не можете определиться?</b> Давайте совмещать!
+                    <button class="holidayWithUs-button button-secondary--outline">Узнать подробнее</button>
+                </p>
+            </article>
+
+            <article class="holidayWithUs-gallery">
+                <div class="holidayWithUs-gallery__item wow animate__animated animate__fadeInBottomRight">
                     <img src="public/meditation.jpg" alt="#">
                 </div>
-            </div>
-            <div class="gallery-item">
-                <div class="gallery-item__small-block d-flex align-end">
+                <div class="holidayWithUs-gallery__item wow animate__animated animate__fadeInBottomRight">
                     <img src="public/cycling.jpg" alt="#">
                 </div>
-            </div>
-            <div class="gallery-item">
-                <div class="gallery-item__small-block d-flex align-end">
-                    <img src="public/caves/3.jpg" alt="#">
+                <div class="holidayWithUs-gallery__item wow animate__animated animate__fadeInBottomRight">
+                    <img src="public/caves/2.jpg" alt="#">
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="blog" id="blog">
+        <div class="blog-container container">
+            <div></div>
+        </div>
+    </section>
+
+    <section class="callUs">
+        <div class="callUs-container container">
+            <div class="callUs-card card wow animate__animated animate__fadeIn">
+                <div class="card-container d-flex justify-between align-center">
+                    <article style="width: 100%; max-width: 45%">
+                        <h4 class="card-title">Оставьте заявку
+                            на обратный звонок
+                        </h4>
+                        <p class="card-text">Оставьте заявку прямо сейчас и наша команда свяжется с Вами в ближайшее время! Мы предлагаем профессиональные услуги по размещению и отдыха, созданию комфортный и экстримальных условий для отдыха.
+                            Доверьте нам Ваш отдых и получите качественный результат!
+                        </p>
+                    </article>
+
+                    <form class="submitForm card-light wow animate__animated animate__fadeInUp" method="post">
+                        <div class="card-container">
+                            <label class="submitForm-inputGroup input-group" for="name">
+                                <span>Ваше Имя и Фамилия</span>
+                                <input class="input-outline" id="name" name="name"
+                                       placeholder="Иван Иванов" type="text"/>
+                            </label>
+                            <label class="submitForm-inputGroup input-group" for="phone">
+                                <span>Телефон</span>
+                                <input class="input-outline" id="phone" name="phone"
+                                       placeholder="+7-(888)-888-88-88" type="text"/>
+                            </label>
+                            <button class="submitForm-button button-primary" type="submit">Отправить</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="callUs">
-    <div class="callUs-container container">
-        <div class="callUs-card card">
-            <div class="card-container d-flex justify-between align-center">
-                <div style="width: 100%; max-width: 45%">
-                    <div class="card-title">Оставьте заявку
-                        на обратный звонок
-                    </div>
-                    <div class="card-text">Оставьте заявку прямо сейчас и наша команда свяжется с Вами в ближайшее
-                        время! Мы предлагаем профессиональные услуги по размещению и отдыха, созданию комфортный и
-                        экстримальных условий для отдыха. Доверьте нам Ваш отдых и получите качественный результат!
-                    </div>
-                </div>
+    <section class="reviews" id="reviews">
+        <div class="reviews-container container">
+            <div>
 
-                <form class="submitForm card-light wow animate__animated animate__fadeInUp" method="post">
-                    <div class="card-container">
-                        <label class="submitForm-inputGroup input-group" for="name">
-                            <span>Ваше Имя и Фамилия</span>
-                            <input class="input-outline" id="name" name="name"
-                                   placeholder="Иван Иванов" type="text"/>
-                        </label>
-                        <label class="submitForm-inputGroup input-group" for="phone">
-                            <span>Телефон</span>
-                            <input class="input-outline" id="phone" name="phone"
-                                   placeholder="+7-(888)-888-88-88" type="text"/>
-                        </label>
-                        <button class="submitForm-button button-primary" type="submit">Отправить</button>
-                        <!-- <button class="submitForm-button button-primary" type="submit">Отправить</button>-->
-                    </div>
-                </form>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+</article>
 
-<footer class="footer"></footer>
+<footer class="footer" id="contacts"></footer>
 </body>
 </html>

@@ -69,6 +69,13 @@
 @media (max-width: 960px) {
     .header {
         height: 60px;
+        background: transparent;
+    }
+
+    .header-container {
+        height: inherit;
+        background: white;
+        border-radius: var(--radius-regular);
     }
 
     .header-nav {
