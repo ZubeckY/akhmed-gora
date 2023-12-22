@@ -1,6 +1,6 @@
 /* gallery */
 .gallery {
-    margin-top: 20px
+    margin-top: 20px;
 }
 
 .gallery-items {
@@ -15,6 +15,8 @@
 
 .gallery-item {
     padding: 4px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
 }
 
 .gallery-item__big-block {
@@ -37,7 +39,12 @@
     backdrop-filter: blur(15px);
 }
 
-.gallery-item img {
+.gallery-item__small-block {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-item__small-block img {
     display: block;
     width: 100%;
     height: 100%;
@@ -69,4 +76,64 @@
 .gallery-item:nth-child(5) {
     grid-column: 11/13;
     grid-row: 3/5;
+}
+
+/* callUs */
+.callUs {
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+}
+
+.callUs-container {
+    display: flex;
+    height: inherit;
+    align-items: center;
+    justify-content: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: var(--radius-regular);
+    background-image: url("../../public/mountain.jpg");
+}
+
+.callUs-card {
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+    backdrop-filter: blur(40px);
+    padding: 35px 30px !important;
+    box-shadow: var(--box-shadow);
+    background: var(--blur-gradient) !important;
+}
+
+.callUs-card .card-title {
+    font-size: 23px;
+    line-height: 28px;
+    white-space: pre-line;
+    text-transform: uppercase;
+}
+
+.callUs-card .card-text {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+/* submitForm */
+.submitForm {
+    width: 100%;
+    height: 240px;
+    max-width: 45%;
+}
+
+.submitForm-inputGroup {
+    margin: 15px 0 0 !important;
+}
+
+.submitForm-button {
+    width: 100%;
+    height: 45px;
+    margin: 20px 0 15px;
+    text-transform: uppercase;
 }

@@ -1,0 +1,85 @@
+.footer {
+    margin-top: 40px;
+    padding: 10px 0;
+}
+
+.footer-card {
+    background: var(--link);
+}
+
+.footer-copyright {
+    margin-top: 15px;
+}
+
+.footer-copyright__container {
+    flex-direction: row;
+}
+
+.footer-contacts__round {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
+    background: var(--light);
+    border-radius: var(--radius-round);
+}
+
+.footer-contacts__round.vk {
+    background: var(--vk-color);
+}
+
+.footer-contacts__round.vk img {
+    display: block;
+    width: 26px;
+    height: 26px;
+}
+
+.footer-contacts__round.telegram {
+    background: var(--telegram-color);
+}
+
+.footer-contacts__round.telegram img {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.footer-contacts__round.whatsapp {
+    background: var(--whatsapp-color);
+}
+
+.footer-contacts__round.whatsapp img {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.footer-contacts__round.instagram {
+    background: var(--instagram-color);
+}
+
+.footer-contacts__round.instagram img {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.footer-contacts__round-container {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-contacts__round + .footer-contacts__round {
+    margin-left: 10px;
+}
+
+@media (max-width: 720px) {
+    .footer-copyright__container {
+        flex-direction: column;
+    }
+}

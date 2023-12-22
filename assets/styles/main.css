@@ -1,4 +1,7 @@
+@import "header.css";
+@import "footer.css";
 @import "styles.css";
+@import "animate.min.css";
 
 :root {
     --primary: #4E9488;
@@ -11,6 +14,10 @@
     --radius-round: 50%;
     --radius-small: 9px;
     --radius-regular: 13px;
+    --vk-color: #2787F5;
+    --telegram-color: #2AABEE;
+    --whatsapp-color: #25D366;
+    --instagram-color: radial-gradient(circle farthest-corner at 32% 106%, #FFE17DFF 0%, #FFCD69FF 10%, #FA9137FF 28%, #EB4141FF 42%, transparent 82%), linear-gradient(135deg, #234BD7 12%, #C33CBE 58%);
     --blur-gradient: linear-gradient(268deg, hsla(0, 0%, 85%, .4) 3.77%, hsla(0, 0%, 85%, .2) 98.84%);
     --box-shadow: 0 0 30px 25px rgba(34, 80, 57, 0.2);
 }
@@ -40,6 +47,12 @@
     src: local('Constantia'), url('../fonts/Constantia.ttf') format('truetype');
 }
 
+body {
+    position: relative;
+    background: var(--light);
+}
+
+/* a */
 a {
     color: var(--link);
     transition: all ease .3s;
@@ -48,11 +61,6 @@ a {
 a:hover {
     color: var(--secondary);
     transition: all ease .3s;
-}
-
-body {
-    position: relative;
-    background: var(--light);
 }
 
 /* ul, li */
@@ -121,6 +129,7 @@ input[type="number"]:focus {
 
 /* button */
 button {
+    cursor: pointer;
     height: 35px;
     font-size: 15px;
     padding: 4px 13px;
@@ -128,28 +137,38 @@ button {
     font-family: 'Bergamasco', sans-serif;
 }
 
-.button-primary {
-    color: var(--light);
+.button-primary,
+.button-primary--outline:hover {
+    color: white;
     background: var(--primary);
     border-radius: var(--radius-small);
+    transition: all ease .15s;
 }
 
-.button-primary--outline {
+.button-primary--outline,
+.button-primary:hover {
     color: var(--primary);
+    background: white;
     border: 1px solid var(--primary);
     border-radius: var(--radius-small);
+    transition: all ease .15s;
 }
 
-.button-secondary {
-    color: var(--light);
+.button-secondary,
+.button-secondary--outline:hover {
+    color: white;
     background: var(--secondary);
     border-radius: var(--radius-small);
+    transition: all ease .15s;
 }
 
-.button-secondary--outline {
+.button-secondary--outline,
+.button-secondary:hover {
     color: var(--secondary);
+    background: white;
     border: 1px solid var(--secondary);
     border-radius: var(--radius-small);
+    transition: all ease .15s;
 }
 
 /* container */
