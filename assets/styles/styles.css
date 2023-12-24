@@ -83,10 +83,29 @@
     grid-row: 3/5;
 }
 
+@media (max-width: 820px) {
+    .gallery-items {
+        display: block;
+    }
+
+    .gallery-item:nth-child(1) {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .gallery-item:nth-child(2),
+    .gallery-item:nth-child(3),
+    .gallery-item:nth-child(4),
+    .gallery-item:nth-child(5) {
+        display: none;
+    }
+}
+
 /* holidayWithUs */
 .holidayWithUs {
     margin-top: 40px;
-    height: 600px;
+    min-height: 640px;
 }
 
 .holidayWithUs-container {
@@ -150,8 +169,9 @@
 }
 
 .holidayWithUs-button {
-    width: 350px;
+    width: 100%;
     height: 50px;
+    max-width: 350px;
     margin-top: 20px;
     background: var(--light) !important;
 }
@@ -159,6 +179,27 @@
 .holidayWithUs-button:hover {
     color: var(--light) !important;
     background: var(--secondary) !important;
+}
+
+@media (max-width: 830px) {
+    .holidayWithUs-container {
+        flex-direction: column;
+    }
+
+    .holidayWithUs article {
+        width: 100%;
+    }
+
+    .holidayWithUs-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
+
+    .holidayWithUs-gallery__item {
+        margin-top: 15px;
+        position: unset !important;
+    }
 }
 
 /* callUs */
@@ -190,6 +231,15 @@
     background: var(--blur-gradient) !important;
 }
 
+.callUs-card__container {
+    justify-content: space-between;
+}
+
+.callUs-card__text {
+    width: 100%;
+    max-width: 45%
+}
+
 .callUs-card .card-title {
     font-size: 23px;
     line-height: 28px;
@@ -204,11 +254,30 @@
     white-space: pre-line;
 }
 
+@media (max-width: 1100px) {
+    .callUs {
+        height: auto;
+    }
+
+    .callUs-card__container {
+        justify-content: center;
+    }
+
+    .callUs-card {
+        margin: 30px 0;
+    }
+
+    .callUs-card__text {
+        max-width: none;
+        margin-bottom: 15px;
+    }
+}
+
 /* submitForm */
 .submitForm {
     width: 100%;
     height: 250px;
-    max-width: 45%;
+    max-width: 345px;
 }
 
 .submitForm-inputGroup {
@@ -248,11 +317,13 @@
     color: var(--dark-text);
     margin-left: 15px;
 }
+
 .reviews-item__card {
     display: block;
     width: 30%;
     margin-bottom: 15px;
 }
+
 .reviews-item__card:first-child {
     margin-right: 15px;
 }
@@ -270,4 +341,13 @@
     display: block;
     width: 25px;
     height: 25px;
+}
+
+@media (max-width: 820px) {
+    .reviews-item__card {
+        width: 100%;
+    }
+    .reviews-ItemsWrapper {
+        flex-direction: column;
+    }
 }

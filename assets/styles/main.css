@@ -265,6 +265,10 @@ button {
     align-items: baseline;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 /* card */
 .card {
     padding: 12px;
