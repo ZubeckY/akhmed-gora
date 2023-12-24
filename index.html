@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/styles/main.css" media="all">
+    <script src="assets/scripts/index.js" defer></script>
     <script src="assets/scripts/wow.min.js"></script>
     <script>new WOW().init()</script>
     <title>Ахмед гора</title>
@@ -28,8 +29,7 @@
                 <ul class="header-nav__list d-flex flex-row justify-between align-center">
                     <li class="header-nav__list-item">
                         <a class="d-block logo" href="#">
-                            <img class="d-block" title="logo"
-                                 src="public/icons/logo.svg" alt="#">
+                            <img class="d-block" title="logo" src="public/icons/logo.svg" alt="#">
                         </a>
                     </li>
 
@@ -42,7 +42,7 @@
                     </li>
 
                     <li class="header-nav__list-item">
-                        <a class="d-block" href="#blog">Блог</a>
+                        <a class="d-block" href="#">Блог</a>
                     </li>
 
                     <li class="header-nav__list-item">
@@ -64,15 +64,17 @@
 </header>
 
 <article>
-    <section class="gallery">
+    <section class="gallery" id="about-us">
         <div class="gallery-container container">
             <div class="gallery-items">
                 <article class="gallery-item">
                     <div class="gallery-item__big-block d-flex align-end">
-                        <h1 class="card-title wow animate__animated animate__fadeInLeft">Туристическое агентство базы
-                            отдыха “Ахмед-Гора”
-                            Приглашает вас на отдых в районе Ахмед-горы!
-                        </h1>
+                        <div class="card-title">
+                            <h1 class="wow animate__animated animate__fadeInLeft">
+                                Туристическое агентство базы отдыха “Ахмед-Гора”
+                                Приглашает вас на отдых в районе Ахмед-горы!
+                            </h1>
+                        </div>
                     </div>
                 </article>
                 <article class="gallery-item">
@@ -98,15 +100,6 @@
             </div>
         </div>
     </section>
-
-    <!--    <section class="" id="about-us">-->
-    <!--        <div class="container">-->
-    <!--            <article class="card-light">-->
-    <!--                <h2 class="card-light-title">Будьте как дома!</h2>-->
-    <!--                <p class="card-light-text">Выбирая отдых у нас - вы выбираете в первую очередь совмещение активного отдыха с медитативным релаксом от видов, открывающихся отовсюду в пределах нашего туристического комплекса!</p>-->
-    <!--            </article>-->
-    <!--        </div>-->
-    <!--    </section>-->
 
     <section class="holidayWithUs" id="services">
         <div class="holidayWithUs-container container d-flex align-center">
@@ -136,18 +129,12 @@
                     <img src="public/meditation.jpg" alt="#">
                 </div>
                 <div class="holidayWithUs-gallery__item wow animate__animated animate__fadeInBottomRight">
-                    <img src="public/cycling.jpg" alt="#">
-                </div>
-                <div class="holidayWithUs-gallery__item wow animate__animated animate__fadeInBottomRight">
                     <img src="public/caves/2.jpg" alt="#">
                 </div>
+                <div class="holidayWithUs-gallery__item wow animate__animated animate__fadeInBottomRight">
+                    <img src="public/cycling.jpg" alt="#">
+                </div>
             </article>
-        </div>
-    </section>
-
-    <section class="blog" id="blog">
-        <div class="blog-container container">
-            <div></div>
         </div>
     </section>
 
@@ -186,16 +173,17 @@
         </div>
     </section>
 
-    <section class="reviews" id="reviews">
+    <section class="reviews wow animate__animated animate__slideInUp" id="reviews">
         <div class="reviews-container container">
-            <div>
-
+            <div class="primary-text">Наши гости делятся
+                впечатлениями об отдыхе
             </div>
+            <div class="reviews-ItemsWrapper"></div>
         </div>
     </section>
 </article>
 
-<footer class="footer" id="contacts">
+<footer class="footer wow animate__animated animate__flipInX" id="contacts">
     <div class="footer-container container">
         <article class="footer-card card">
             <div class="card-container">

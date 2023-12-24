@@ -267,13 +267,13 @@ button {
 
 /* card */
 .card {
-    padding: 6px 12px;
+    padding: 12px;
     background: var(--card);
     border-radius: var(--radius-regular);
 }
 
 .card-light {
-    padding: 6px 12px;
+    padding: 12px;
     background: white;
     border-radius: var(--radius-regular);
 }

@@ -34,9 +34,14 @@
 .gallery-item__big-block .card-title {
     width: 100%;
     padding: 15px;
-    white-space: pre-line;
     background: var(--blur-gradient);
     backdrop-filter: blur(15px);
+}
+
+.gallery-item__big-block .card-title * {
+    display: block;
+    max-width: 450px;
+    font-size: 18px;
 }
 
 .gallery-item__small-block {
@@ -78,7 +83,6 @@
     grid-row: 3/5;
 }
 
-
 /* holidayWithUs */
 .holidayWithUs {
     margin-top: 40px;
@@ -113,27 +117,26 @@
     transition: all ease-in-out .15s;
 }
 
-.holidayWithUs-gallery__item:hover {
-    z-index: 100;
-    transition: all ease-in-out .15s;
-}
-
 .holidayWithUs-gallery__item:first-child {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    display: block;
+    position: relative;
+    width: 100%;
 }
 
 .holidayWithUs-gallery__item:nth-child(2) {
+    display: block;
     position: absolute;
-    top: 150px;
-    left: 70px;
+    width: 100%;
+    top: 30px;
+    left: -40px;
 }
 
 .holidayWithUs-gallery__item:nth-child(3) {
+    display: block;
     position: absolute;
-    top: 50px;
-    left: 150px;
+    width: 100%;
+    left: 30px;
+    bottom: -40px;
 }
 
 .holidayWithUs-gallery__item img {
@@ -217,4 +220,54 @@
     height: 45px;
     margin: 20px 0 15px;
     text-transform: uppercase;
+}
+
+/* reviews */
+.reviews {
+    margin-top: 60px;
+}
+
+.reviews .primary-text {
+    font-size: 23px;
+    line-height: 30px;
+    white-space: pre-line;
+}
+
+.reviews-ItemsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.reviews-ItemsWrapper .card-light-text {
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.reviews-ItemsWrapper .card-text {
+    color: var(--dark-text);
+    margin-left: 15px;
+}
+.reviews-item__card {
+    display: block;
+    width: 30%;
+    margin-bottom: 15px;
+}
+.reviews-item__card:first-child {
+    margin-right: 15px;
+}
+
+.reviews-item__card + .reviews-item__card {
+    margin-right: 15px;
+}
+
+.reviews-item__stars {
+    margin-top: 2px;
+    margin-left: -5px;
+}
+
+.rating_star {
+    display: block;
+    width: 25px;
+    height: 25px;
 }
