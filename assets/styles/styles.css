@@ -259,12 +259,14 @@
         height: auto;
     }
 
-    .callUs-card__container {
-        justify-content: center;
-    }
-
     .callUs-card {
         margin: 30px 0;
+        max-width: 90%;
+        padding: 25px 15px !important;
+    }
+
+    .callUs-card__container {
+        justify-content: center;
     }
 
     .callUs-card__text {
